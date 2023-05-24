@@ -10,7 +10,7 @@ class WeatherController extends Controller
 {
     public function getHumidity()
     {
-        $apiKey = '011462cb4d9a9a62da74cf73925e6767'; // Clave de API de OpenWeatherMap
+        $apiKey = env('API_WEATHER'); // Clave de API de OpenWeatherMap
         $cities = [
             'Miami' => ['lat' => 25.7617, 'lon' => -80.1918],
             'Orlando' => ['lat' => 28.5383, 'lon' => -81.3792],
